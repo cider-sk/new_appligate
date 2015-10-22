@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>アプリゲート</title>
+        <!-- drawer css -->
+        <link rel="stylesheet" href="./drawer/dist/css/drawer.min.css">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="js/jquery-2.1.4.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.1/iscroll-min.js"></script>
+        <script src="//cdn.rawgit.com/ungki/bootstrap.dropdown/3.3.1/dropdown.min.js"></script>
+        <script src="js/original.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <!-- drawer js -->
+        <script src="./drawer/dist/js/jquery.drawer.min.js"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="icomoon/style.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body class="drawer drawer-right">
+        <div class="container search-tag-page">
+            <header>
+                <div id="header" class="row header-top">
+                    <div class="col-xs-4 left">
+                        <ul class="clearfix">
+                            <li><a href="https://www.facebook.com/sharer/sharer.php?src=bm&u=http://www.yahoo.co.jp&t=yahoo" onclick="window.open(this.href, 'FBwindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;"><span class="icon-facebook"></span><br><span class="font">Facebook</span></a></li>
+                            <li><a href="http://twitter.com/share?url=http://www.yahoo.co.jp&text=yahoo" onclick="window.open(this.href, 'Twindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;"><span class="icon-twitter"></span><br><span class="font">Twitter</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 middle">
+                        <p><a href="./index.html"><img src="img/header_logo.png" alt="ロゴ"></a></p>
+                    </div>
+                    <div class="col-xs-4 right">
+                        <a href="./mypage.html"><img class="mypage" src="img/header_mypage.png" alt=""></a>
+                        <a href="./search.html"><img class="search" src="img/header_search.png" alt=""></a>
+                        <img class="menu-icon drawer-toggle" src="img/header_menu.png" alt="">
+                        <div id="sidemenu"class="drawer-main drawer-default">
+                            <nav class="drawer-nav" role="navigation">
+                                <ul>
+                                    <li><a href="./information.html">お知らせ</a></li>
+                                    <li><a href="./beginner.html">初めての方へ</a></li>
+                                    <li><a href="./developer.html">開発者様へ</a></li>
+                                    <li><a href="./about.html">事前予約について</a></li>
+                                    <li><a href="./privacy_policy.html">プライバシーポリシー</a></li>
+                                    <li><a href="./user_policy.html">利用規約</a></li>
+                                    <li><a href="./withdrawal.html">退会</a></li>
+                                    <li><a href="./contact.html">お問い合わせ</a></li>
+                                </ul>
+                            </nav>
+                        </div>    
+                    </div>
+                </div><!-- ./header-top -->
+            </header>
+            <div class="main-content thanks-page">
+                <h2>ご登録ありがとうございます</h2>
+                <p>
+                本登録が完了しました。<br>
+                ログインして早速特典をゲットしよう！
+                </p>
+                <a href="./mypage.html">このページは自動的に切り替わります。<br>切り替わらない場合はコチラ</a>
+            </div><!-- /.main-content -->
+            <footer>
+                <a href="#">開発者登録について</a>
+                <span>|</span>
+                <a href="#">個人情報</a>
+                <span>|</span>
+                <a href="#">お問合わせ</a>
+                <p class="copyright">株式会社アルタビスタライズ</p>
+            </footer>           
+        </div><!-- /.container -->
+    </body>
+</html>

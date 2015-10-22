@@ -1,0 +1,35 @@
+[data-role="sidemenu"] {
+  overflow: scroll;
+  position: fixed;
+  width: 420px;
+  height: 100%;
+  background-color: #fff;
+  font-size: 14px;
+  padding-top:50px;
+  padding-left:30px;
+}
+
+[data-role="sidemenu"] ul {
+  list-style: none;
+  margin: 0 0 20px;
+  padding: 0;
+}
+
+[data-role="sidemenu"] li {
+    margin-bottom:20px;
+}
+
+[data-role="sidemenu"] a {
+  display: block;
+  padding: 12px 20px;
+  color: #333!important;
+  font-weight:bold;
+  text-decoration: none;
+}
+[data-role="sidemenu"] a:hover{
+    text-decoration:underline!important;
+}
+
+[data-role="sidemenu"] .divider {
+  height: 20px;
+}

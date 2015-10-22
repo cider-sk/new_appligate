@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>アプリゲート</title>
+        <!-- drawer css -->
+        <link rel="stylesheet" href="./drawer/dist/css/drawer.min.css">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="js/jquery-2.1.4.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.1/iscroll-min.js"></script>
+        <script src="//cdn.rawgit.com/ungki/bootstrap.dropdown/3.3.1/dropdown.min.js"></script>
+        <script src="js/original.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <!-- drawer js -->
+        <script src="./drawer/dist/js/jquery.drawer.min.js"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="icomoon/style.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body class="drawer drawer-right">
+        <div class="container my-page search-tag-page">
+            <header>
+                <div id="header" class="row header-top">
+                    <div class="col-xs-4 left">
+                        <ul class="clearfix">
+                            <li><a href="https://www.facebook.com/sharer/sharer.php?src=bm&u=http://www.yahoo.co.jp&t=yahoo" onclick="window.open(this.href, 'FBwindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;"><span class="icon-facebook"></span><br><span class="font">Facebook</span></a></li>
+                            <li><a href="http://twitter.com/share?url=http://www.yahoo.co.jp&text=yahoo" onclick="window.open(this.href, 'Twindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;"><span class="icon-twitter"></span><br><span class="font">Twitter</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 middle">
+                        <p><a href="./index.html"><img src="img/header_logo.png" alt="ロゴ"></a></p>
+                    </div>
+                    <div class="col-xs-4 right">
+                        <a href="./logout"><img class="mypage" src="img/header_login.png" alt=""></a>
+                        <a href="./search.html"><img class="search" src="img/header_search.png" alt=""></a>
+                        <img class="menu-icon drawer-toggle" src="img/header_menu.png" alt="">
+                        <div id="sidemenu"class="drawer-main drawer-default">
+                            <nav class="drawer-nav" role="navigation">
+                                <ul>
+                                    <li><a href="./information.html">お知らせ</a></li>
+                                    <li><a href="./beginner.html">初めての方へ</a></li>
+                                    <li><a href="./developer.html">開発者様へ</a></li>
+                                    <li><a href="./about.html">事前予約について</a></li>
+                                    <li><a href="./privacy_policy.html">プライバシーポリシー</a></li>
+                                    <li><a href="./user_policy.html">利用規約</a></li>
+                                    <li><a href="./withdrawal.html">退会</a></li>
+                                    <li><a href="./contact.html">お問い合わせ</a></li>
+                                </ul>
+                            </nav>
+                        </div>    
+                    </div>
+                </div><!-- ./header-top -->
+            </header>
+            <div class="main-content newspage login-page">
+                <div class="mypage-menu clearfix">
+                    <a href="./register-company.html">アプリの会社欄はコチラ</a>
+                </div>
+                <div class="row main-content single-page">
+                    <div class="col-xs-9 flow">
+                        <div class="flow-content">
+                            <div class="flow1 flow-box clearfix">
+                                <h3 class="flow-title"><img src="./img/name.png" alt="appligate">とは</h3>
+                                <div class="img-box phone-img">
+                                    <img src="./img/phone.png" alt="タブレット">
+                                </div>
+                                <div class="text-box">
+                                    <p>APPLIGATEは、新作アプリやお得なアプリを紹介・応援するサイトです。<br>
+                                    登録することで、さまざまなアプリの特典を受け取ることが出来ます。</p>
+                                </div>
+                            </div>
+                            <div class="flow-next"></div>
+                            <div class="flow2 flow-box">
+                                <h3 class="flow-title">事前予約でお得がいっぱい！</h3>
+                                <div class="img-box gacha-img">
+                                    <img src="./img/gacha-open.png" alt="">
+                                </div>
+                                <div class="text-box">
+                                    <p class="otoku">お得</p>
+                                    <p>リリース前のアプリの情報がいち早く手に入る！</p>
+                                    <p class="otoku">お得</p>
+                                    <p>予約することで、リリース時にお知らせが届くため、すぐにダウンロードできる！</p>
+                                    <p class="otoku">お得</p>
+                                    <p>予約者限定の特典で、リリースと同時に他ユーザーに差をつけられる！</p>
+                                    <p class="otoku">お得</p>
+                                    <p>更に、ガチャでお得なアイテムをGET！<br>
+                                    最高位レアがすぐ手に入る特別なガチャも・・・？</p>
+                                </div>
+                                <div class="clearfix"></div>
+                                <p class="caution"> ※予約特典・ガチャがないアプリもあります。</p>
+                            </div>
+                            <div class="flow-next"></div>
+                            <div class="flow3 flow-box">
+                                <h3 class="flow-title">配信中アプリ特典など、他にも嬉しいサービス！</h3>
+                                <div class="text-box">
+                                    <p class="uresii">嬉しい</p>
+                                    <p class="pink">ストア配信中のアプリのお得な情報も配信！</p>
+                                    <p>ゲームを有利に進めるレアアイテムもGET！</p>
+                                    <p class="uresii">嬉しい</p>
+                                    <p class="pink">分かり易い検索で、好みのアプリを即発見</p>
+                                    <p>ジャンルだけでなく、「萌え」や「暇つぶし」等、タグ検索機能で、欲しいアプリを簡単に探せる。</p>
+                                    <p class="uresii">嬉しい</p>
+                                    <p class="pink">あなたの好みのアプリをAPPLIGATEがオススメ！</p>
+                                    <p>予約したアプリから、あなたの好みのアプリを、APPLIGATEがオススメ。新しいアプリとの出会いをお手伝い！</p>
+                                    <p class="uresii">嬉しい</p>
+                                </div>
+                            </div>
+                            <div class="flow-next"></div>
+                            <div class="flow4 flow-box">
+                                <h2>
+                                    <img class="free-left" src="./img/free-1.png" alt="">
+                                    もちろんすべてが無料！
+                                    <img class="free-right" src="./img/free-2.png" alt="">
+                                </h2>
+                            </div>
+                            <div class="flow-next"></div>
+                            <div class="create-box">
+                                <p class="box-title">新規登録</p>
+                                <form action="post">
+                                    <input type="text" class="email" placeholder="メールアドレス">
+                                    <input type="text" class="password" placeholder="パスワード">
+                                    <input type="text" class="re_password" placeholder="パスワードの再入力">
+                                    <div class="clearfix"></div>
+                                    <h4>端末の選択</h4>
+                                    <p><input type="checkbox" class="ios_check">ios
+                                    <input type="checkbox" class="android_check">android</p>
+                                    <a href="#">利用規約/プライバシーポリシー</a>
+                                    <p><input type="checkbox" class="policy">利用規約に同意する
+                                    <input type="checkbox" class="plivacy">プライバシーポリシーに同意する</p>
+                                    <p class="cen"><input type="checkbox" class="info_check">アプリ情報を受け取る</p>
+                                </form>
+                                <div class="button-link create-accaunt">
+                                    <a rel="leanModal" href=".sent_ok">新規登録</a>
+                                </div>
+                                <div class="sent_ok modal-comment">
+                                    <h4>登録URLを送信しました。</h4>
+                                    <p>※まだ登録は完了していません。</p>
+                                    <p>
+                                    指定のメールアドレスに、登録用のURLを送信しました。<br>
+                                    メール内のURLよりアクセスいただくと、登録完了になります。
+                                    </p>
+                                    <a class="red-yes" href="./thanks.html">OK</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /.col-xs-9 -->
+                    <div class="col-xs-3 login-side">
+                        <div class="login-box">
+                            <p class="box-title">ログイン</p>
+                            <input type="text" class="email" placeholder="メールアドレス">
+                            <input type="text" class="password" placeholder="パスワード">
+                            <input type="checkbox" class="keep_login">ログイン状態を維持する
+                            <div class="button-link login-button">
+                                <a href="./mypage.html">ログイン</a>
+                            </div>
+                            <a class="cen" href="#">パスワードを忘れた方</a>
+                        </div>
+                        <div class="create-box">
+                            <p class="box-title">新規登録</p>
+                            <input type="text" class="email" placeholder="メールアドレス">
+                            <input type="text" class="password" placeholder="パスワード">
+                            <input type="text" class="re_password" placeholder="パスワードの再入力">
+                            <h4>端末の選択</h4>
+                            <p><input type="checkbox" class="ios_check">ios</p>
+                            <p><input type="checkbox" class="android_check">android</p>
+                            <a href="#">利用規約/プライバシーポリシー</a>
+                            <p><input type="checkbox" class="policy">利用規約に同意する</p>
+                            <p><input type="checkbox" class="plivacy">プライバシーポリシーに同意する</p>
+                            <p><input type="checkbox" class="info_check">アプリ情報を受け取る</p>
+                            <div class="button-link create-accaunt">
+                                <a rel="leanModal" href=".sent_ok">新規登録</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /.main-content -->
+            <footer>
+                <a href="#">開発者登録について</a>
+                <span>|</span>
+                <a href="#">個人情報</a>
+                <span>|</span>
+                <a href="#">お問合わせ</a>
+                <p class="copyright">株式会社アルタビスタライズ</p>
+            </footer>           
+        </div><!-- /.container -->
+    </body>
+</html>
