@@ -10,6 +10,7 @@ $(function(){
         $(".now-select").append('<div class="now"><'+'/'+'div>');
     }
 });
+/*ページ上部の三角形のタブ*/
 $(function(){
     $(".gacharank,.jizen-app,.haisin-app").click(function(){
         $(".col-xs-4.now-select").each(function(){
@@ -21,6 +22,14 @@ $(function(){
         $(this).addClass("now-select");
         $(this).append('<div class="now"><'+'/'+'div>');
         $(".all-gacha-num").show();
+        /*ニュースページ*/
+        $(".all-news").hide();
+        $(".jizen-news").hide();
+        $(".haisin-news").show();
+        /*検索結果*/
+        $(".all-result").hide();
+        $(".jizen-result").hide();
+        $(".haisin-result").show();
     });
     $(".jizen-app").click(function(){
         $(this).addClass("now-select");
@@ -28,6 +37,14 @@ $(function(){
         $(".all-gacha-num").hide();
         $(".jizen").show();
         $(".haisin").hide();
+        /*ニュースページ*/
+        $(".all-news").show();
+        $(".jizen-news").hide();
+        $(".haisin-news").hide();
+        /*検索結果*/
+        $(".all-result").show();
+        $(".jizen-result").hide();
+        $(".haisin-result").hide();
     });
     $(".haisin-app").click(function(){
         $(this).addClass("now-select");
@@ -35,6 +52,14 @@ $(function(){
         $(".all-gacha-num").hide();
         $(".haisin").show();
         $(".jizen").hide();
+        /*ニュースページ*/
+        $(".all-news").hide();
+        $(".jizen-news").show();
+        $(".haisin-news").hide();
+        /*検索結果*/
+        $(".all-result").hide();
+        $(".jizen-result").show();
+        $(".haisin-result").hide();
     });
 });
 $(function(){
@@ -75,4 +100,10 @@ $(function() {
         closeButton: ".modal_close",  // 閉じるボタンのCSS classを指定
         modalparent: "#many-modals"
     });
-}); 
+});
+/*画像スライド*/
+$(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "slide"
+  });
+});
