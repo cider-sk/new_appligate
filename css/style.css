@@ -193,11 +193,11 @@ header .now,.mypage-tab .now{
 }
 p.reserve{
     background-color:#00d0a0;
-    margin-bottom:20px;
+    margin-bottom:18px;
 }
 p.nowrelease{
     background-color:#ff951e;
-    margin-bottom:20px;
+    margin-bottom:18px;
     color:#fff;
 }
 .search-tag-page p.nowrelease{
@@ -410,6 +410,17 @@ ul.app-tags a{
     background-image: -ms-linear-gradient(45deg, #ededed 25%, #ededed 25%, transparent 25%, transparent 75%, #ededed 75%, #ededed 75%), -ms-linear-gradient(-135deg, #ededed 25%, #ededed 25%, transparent 25%, transparent 75%, #ededed 75%, #ededed 75%);
     background-image: -o-linear-gradient(45deg, #ededed 25%, #ededed 25%, transparent 25%, transparent 75%, #ededed 75%, #ededed 75%), -o-linear-gradient(-135deg, #ededed 25%, #ededed 25%, transparent 25%, transparent 75%, #ededed 75%, #ededed 75%);
 }
+
+.single-osusume h5{
+    color:#fff;
+    background-color:#bd31ff;
+}
+.single-osusume{
+    background-image: -webkit-linear-gradient(45deg, #eccaff 25%, #eccaff 25%, transparent 25%, transparent 75%, #eccaff 75%, #eccaff 75%), -webkit-linear-gradient(-135deg, #eccaff 25%, #eccaff 25%, transparent 25%, transparent 75%, #eccaff 75%, #eccaff 75%);
+    background-image: -moz-linear-gradient(45deg, #eccaff 25%, #eccaff 25%, transparent 25%, transparent 75%, #eccaff 75%, #eccaff 75%), -moz-linear-gradient(-135deg, #eccaff 25%, #eccaff 25%, transparent 25%, transparent 75%, #eccaff 75%, #eccaff 75%);
+    background-image: -ms-linear-gradient(45deg, #eccaff 25%, #eccaff 25%, transparent 25%, transparent 75%, #eccaff 75%, #eccaff 75%), -ms-linear-gradient(-135deg, #eccaff 25%, #eccaff 25%, transparent 25%, transparent 75%, #eccaff 75%, #eccaff 75%);
+    background-image: -o-linear-gradient(45deg, #eccaff 25%, #eccaff 25%, transparent 25%, transparent 75%, #eccaff 75%, #eccaff 75%), -o-linear-gradient(-135deg, #eccaff 25%, #eccaff 25%, transparent 25%, transparent 75%, #eccaff 75%, #eccaff 75%);
+}
 .side-osusume a.app-title{
     font-weight:bold;
 }
@@ -420,8 +431,10 @@ ul.app-tags a{
 .search-company-page .side-osusume .app-img-box{
     border-bottom:2px solid #56a6e6;
 }
+.single-osusume .app-img-box{
+    border-color:#bd31ff;
+}
 .app-img-box a{
-    margin-top:15px;
     margin-bottom:3px;
     margin-left:7px;
     color:#333;
@@ -488,13 +501,13 @@ p.title-company{
     float:left;
     margin-right:10px;
 }
-.news-box p.reserve,.news-box p.android,.news-box p.ios{
-    width:50px;
+.news-box p.reserve,.news-box p.nowrelease,.news-box p.android,.news-box p.ios{
+    width:52px;
     float:left;
     color:#fff;
     text-align:center;
     margin-left:5px;
-    font-size:10px;
+    font-size:11px;
     margin-top:5px;
 }
 .news-box ul.app-tags{
@@ -524,7 +537,7 @@ p.news-content{
     margin-bottom:50px;
 }
 .news-box .button-link{
-    width: 300px;
+    width: 270px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -538,7 +551,7 @@ p.news-content{
     font-size: 18px;
     color: #ffffff;
     margin: 10px auto;
-    padding: 10px 20px;
+    padding: 15px 20px;
     box-shadow: 0 3px 0 #d99000;
 }
 .news-box .button-link a:hover{
@@ -579,8 +592,7 @@ p.news-content{
 }
 .search-form{
     float:right;
-    margin-right:100px;
-    margin-bottom:30px;
+    margin:30px 100px 30px 0; 
 }
 .search-form input{
     width:300px;
@@ -2027,4 +2039,14 @@ p.notice-num{
     margin-bottom: 0;
     padding-top:2px;
     border-radius: 10px;
+}
+.osusume-app-img{
+    float:left;
+}
+.osusume-app-img img{
+    width:300px;
+    height:90px;
+}
+.search-tag-page .search-form,.search-company-page .search-form{
+    margin-top:0;
 }
