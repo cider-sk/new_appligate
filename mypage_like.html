@@ -71,9 +71,46 @@
                                 <div class="button-link save">
                                     <a href="#">貯める</a>
                                 </div>
-                                <a class="help-gacha" href="#">レアガチャって？</a>
+                                <a class="help-gacha" rel="leanModal" href="#about-rare">レアガチャって？</a>
                             </div>
                             <img class="bole" src="img/gacha2.png" alt="ボール">
+                            <div id="about-rare" class="modal-comment under fix-btn">
+                                <h3>レアガチャを回すには・・・</h3>
+                                <div class="flow-box">
+                                    <div class="img-box-right">
+                                        <img class="about_machine" src="img/gacha.png" alt="ガチャ">
+                                        <img class="about_ball" src="img/gacha2.png" alt="ボール">
+                                    </div>
+                                    <h4>レアガチャって？</h4>
+                                    <p class="pink">上位レア度の特典しか出ない、夢のようなガチャ!</p>
+                                    <p>最高クラスの特典が、即手に入るので、もうノーマルばっかりで、イライラすることもない！</p>
+                                </div>
+                                <div class="flow-next"></div>
+                                <div class="flow-box">
+                                    <h4>回すにはどうするの？</h4>
+                                    <p>回数の貯め方はとっても簡単。</p>
+                                    <p>アンケートに答えたり、広告を見たりすることで、ガチャの回数が溜まっていくよ。</p>
+                                    <p class="pink">たまったレアガチャの回数は、ガチャのあるアプリなら、どれでも好きなガチャを回すことができるよ!</p>
+                                </div>
+                                <div class="flow-next"></div>
+                                <div class="flow-box">
+                                    <h4>どうやって貯めるの？</h4>
+                                    <p>早速下記リンクから、レアガチャ回数を貯めてみよう!</p>
+                                    <p>※溜まったガチャ回数は、右上のマイページからも確認できるよ。</p>
+                                </div>
+                                <div class="button-link rare-gacha">
+                                    <a href="./result-gacha-rare.html">レアガチャを回す</a>
+                                </div>
+                                <div class="clearfix"></div>
+                                <a class="pink-no modal_close" href="javascript:void(0)">キャンセル</a>
+                            </div>
+                            <script>
+$(function(){
+    $("a[href=#about-rare]").click(function(){
+        $("#about-rare").css("top","30px")
+    });
+});
+                            </script>
                         </div>
                         <div class="row mypage-tab">
                             <div class="col-xs-4"><p><a href="./mypage.html">事前予約</a></p></div>
@@ -223,53 +260,89 @@
                                 <p class="title"><a href="#">SNSクイズ更新！わっしょいわっ・・・</a></p>
                                 <p class="date">2015/09/11 00:00:00</p>
                             </div>
-                            <p class="more-news"><a href="#"><span class="caret"></span>もっと展開</a></p>
+                            <div class="open-news" style="display:none;">
+                                <div class="news-box">
+                                    <p class="title"><a href="./news_single.html">SNSクイズ更新！わっしょいわっ・・・</a></p>
+                                    <p class="date">2015/09/11 00:00:00</p>
+                                </div>
+                                <div class="news-box">
+                                    <p class="title"><a href="./news_single.html">SNSクイズ更新！わっしょいわっ・・・</a></p>
+                                    <p class="date">2015/09/11 00:00:00</p>
+                                </div>
+                                <div class="news-box">
+                                    <p class="title"><a href="./news_single.html">SNSクイズ更新！わっしょいわっ・・・</a></p>
+                                    <p class="date">2015/09/11 00:00:00</p>
+                                </div>
+                            </div>
+                            <p class="more-news"><a href="javascript:void(0)"><span class="caret"></span>もっと展開</a></p>
                         </div>
                         <div class="search-company-page">
                             <div class="side-osusume">
                                 <h5>お気に入り会社のアプリ</h5>
                                 <div class="app-img-box">
-                                    <p class="app-title">クリスタルクラウン</p>
-                                    <img src="img/appbar.png" alt="アプリバー">
+                                    <a class="app-title" href="./single.html">
+                                        クリスタルクラウン
+                                        <img src="img/appbar.png" alt="アプリバー">
+                                    </a>
                                 </div>
                                 <div class="app-img-box">
-                                    <p class="app-title">ねむりの木にすむウィックル</p>
-                                    <img src="img/appbar2.png" alt="アプリバー">
+                                    <a class="app-title" href="./single.html">
+                                        ねむりの木にすむウィックル
+                                        <img src="img/appbar2.png" alt="アプリバー">
+                                    </a>
+                                    <div class="reserve-num-img">
+                                        <p>現在の予約数：18,882</p>
+                                    </div>
                                 </div>
                                 <div class="app-img-box">
-                                    <p class="app-title">プリンセスメーカー</p>
-                                    <img src="img/appbar3.png" alt="アプリバー">
+                                    <a class="app-title" href="./single.html">
+                                        プリンセスメーカー
+                                        <img src="img/appbar3.png" alt="アプリバー">
+                                    </a>
                                 </div>
                                 <div class="app-img-box">
-                                    <p class="app-title">メイプルストーリー</p>
-                                    <img src="img/appbar4.png" alt="アプリバー">
-                                </div>
+                                    <a class="app-title" href="./single.html">
+                                        メイプルストーリー
+                                        <img src="img/appbar4.png" alt="アプリバー">
+                                    </a>
+                                </div>   
                                 <div class="app-img-box store-link">
                                     <p class="app-title">ストアで絶賛配信中！</p>
-                                    <a href="#">プリンセスメーカー</a>
-                                    <a href="#">メイプルストーリー</a>
-                                    <a href="#">さてここでモンダイです</a>
+                                    <a href="./single.html">プリンセスメーカー</a>
+                                    <a href="./single.html">メイプルストーリー</a>
+                                    <a href="./single.html">さてここでモンダイです</a>
                                 </div>
                             </div>
                         </div>
                         <div class="side-osusume">
                             <h5>オススメアプリ<span class="update">Update 2015.09.11</span></h5>
                             <div class="app-img-box">
-                                <p class="app-title">クリスタルクラウン</p>
-                                <img src="img/appbar.png" alt="アプリバー">
-                            </div>
-                            <div class="app-img-box">
-                                <p class="app-title">ねむりの木にすむウィックル</p>
-                                <img src="img/appbar2.png" alt="アプリバー">
-                            </div>
-                            <div class="app-img-box">
-                                <p class="app-title">プリンセスメーカー</p>
-                                <img src="img/appbar3.png" alt="アプリバー">
-                            </div>
-                            <div class="app-img-box">
-                                <p class="app-title">メイプルストーリー</p>
-                                <img src="img/appbar4.png" alt="アプリバー">
-                            </div>
+                                <a class="app-title" href="./single.html">
+                                    クリスタルクラウン
+                                    <img src="img/appbar.png" alt="アプリバー">
+                                </a>
+                                </div>
+                                <div class="app-img-box">
+                                    <a class="app-title" href="./single.html">
+                                        ねむりの木にすむウィックル
+                                        <img src="img/appbar2.png" alt="アプリバー">
+                                    </a>
+                                    <div class="reserve-num-img">
+                                        <p>現在の予約数：18,882</p>
+                                    </div>
+                                </div>
+                                <div class="app-img-box">
+                                    <a class="app-title" href="./single.html">
+                                        プリンセスメーカー
+                                        <img src="img/appbar3.png" alt="アプリバー">
+                                    </a>
+                                </div>
+                                <div class="app-img-box">
+                                    <a class="app-title" href="./single.html">
+                                        メイプルストーリー
+                                        <img src="img/appbar4.png" alt="アプリバー">
+                                    </a>
+                                </div>
                         </div>
                     </div>
                 </div>

@@ -104,7 +104,7 @@
                                 <h4>ガチャを回す回数が足りません。</h4>
                                 <p>レアガチャを回すには、ポイントを貯める必要があります。</p>
                                 <a class="pink-yes" href="./result-gacha-rare.html">貯める</a>
-                                <a class="pink-no" href="#">キャンセル</a>
+                                <a class="pink-no modal_close" href="javascript:void(0)">キャンセル</a>
                             </div>
                             <p class="remmant-rare">残りガチャ回数<span>1回</span></p>
                         </div>
@@ -117,13 +117,11 @@
                                 <h4>ガチャを回す回数が足りません。</h4>
                                 <p>つぶやくことでガチャを10回引けます。</p>
                                 <div class="tweet-box">
-                                    <p>
-                                    さて、ここでモンダイですの先行ガチャ、今なら何回も回せるよ。<br>
-                                    総回転数10000回突破！ #さてここでモンダイです #予約先行ガチャ #アプリゲート #ツイッターカード
-                                    </p>
+                                    <textarea id="gacha-tweet" name="normal-gatya-tweet" rows="5" style="width:100%;">さて、ここでモンダイですの先行ガチャ、今なら何回も回せるよ。総回転数10000回突破！ #さてここでモンダイです #予約先行ガチャ #アプリゲート #ツイッターカード
+                                    </textarea>
                                 </div>
-                                <a class="blue-yes" href="./result-gacha-rare.html">ツイートする</a>
-                                <a class="blue-no" href="#">キャンセル</a>
+                                <a class="blue-yes" href="./result-gacha-normal.html">ツイートする</a>
+                                <a class="blue-no modal_close" href="javascript:void(0)">キャンセル</a>
                             </div>
                             <p class="remmant-normal">残りガチャ回数<span>10回</span></p>
                         </div>
@@ -186,22 +184,25 @@
                             </div>
                         </div>
                     </div>
-                    <div class="under reserve-page">
+                    <div class="under reserve-page result-page-bottom">
                         <div class="row">
-                        <div class="col-xs-6 gacha-link">
-                            <p>すぐに高レアが欲しい人はコチラ</p>
-                            <div class="button-link rare-gacha">
-                                <a href="./result-gacha-rare.html">レアガチャを回す</a>
+                            <div class="col-xs-4">
+                                <div class="button-link change save">
+                                    <a href="./present_confirm.html">確定</a>
+                                </div>
                             </div>
-                            <p class="remmant-rare">残りガチャ回数<span>1回</span></p>
-                        </div>
-                        <div class="col-xs-6 gacha-link">
-                            <p>いっぱいガチャりたい人はコチラ</p>
-                            <div class="button-link normal-gacha">
-                                <a href="./result-gacha-normal.html">ノーマルガチャを回す</a>
+                            <div class="col-xs-4 gacha-link left0">
+                                <div class="button-link rare-gacha">
+                                    <a href="./result-gacha-rare.html">レアガチャを回す</a>
+                                </div>
+                                <p class="remmant-rare">残りガチャ回数<span>1回</span></p>
                             </div>
-                            <p class="remmant-normal">残りガチャ回数<span>10回</span></p>
-                        </div>
+                            <div class="col-xs-4 gacha-link left0">
+                                <div class="button-link normal-gacha">
+                                    <a href="./result-gacha-normal.html">ノーマルガチャを回す</a>
+                                </div>
+                                <p class="remmant-normal">残りガチャ回数<span>10回</span></p>
+                            </div>
                         </div>
                     </div>
 

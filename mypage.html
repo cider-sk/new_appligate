@@ -57,14 +57,14 @@
             </header>
             <div class="main-content newspage">
                 <div class="mypage-menu clearfix">
-                    <a rel="leanModal" href=".modal-comment">ログアウト</a>
+                    <a rel="leanModal" href=".logout-modal">ログアウト</a>
                     <a href="./setting.html">設定</a>
                 </div>
-                <div class="modal-comment">
+                <div class="modal-comment logout-modal">
                     <h4>ログアウトしますか？</h4>
                     <p>予約や特典の確認は、ログイン時にしか確認できません。</p>
                     <a class="red-yes" href="./logout.html">ログアウト</a>
-                    <a class="red-no" href="#">キャンセル</a>
+                    <a class="red-no modal_close" href="javascript:void(0)">キャンセル</a>
                 </div>
                 <div class="row main-content single-page">
                     <div class="col-xs-9 mypage-app">
@@ -77,9 +77,46 @@
                                 <div class="button-link save">
                                     <a href="#">貯める</a>
                                 </div>
-                                <a class="help-gacha" href="#">レアガチャって？</a>
+                                <a class="help-gacha" rel="leanModal" href="#about-rare">レアガチャって？</a>
                             </div>
                             <img class="bole" src="img/gacha2.png" alt="ボール">
+                            <div id="about-rare" class="modal-comment under fix-btn">
+                                <h3>レアガチャを回すには・・・</h3>
+                                <div class="flow-box">
+                                    <div class="img-box-right">
+                                        <img class="about_machine" src="img/gacha.png" alt="ガチャ">
+                                        <img class="about_ball" src="img/gacha2.png" alt="ボール">
+                                    </div>
+                                    <h4>レアガチャって？</h4>
+                                    <p class="pink">上位レア度の特典しか出ない、夢のようなガチャ!</p>
+                                    <p>最高クラスの特典が、即手に入るので、もうノーマルばっかりで、イライラすることもない！</p>
+                                </div>
+                                <div class="flow-next"></div>
+                                <div class="flow-box">
+                                    <h4>回すにはどうするの？</h4>
+                                    <p>回数の貯め方はとっても簡単。</p>
+                                    <p>アンケートに答えたり、広告を見たりすることで、ガチャの回数が溜まっていくよ。</p>
+                                    <p class="pink">たまったレアガチャの回数は、ガチャのあるアプリなら、どれでも好きなガチャを回すことができるよ!</p>
+                                </div>
+                                <div class="flow-next"></div>
+                                <div class="flow-box">
+                                    <h4>どうやって貯めるの？</h4>
+                                    <p>早速下記リンクから、レアガチャ回数を貯めてみよう!</p>
+                                    <p>※溜まったガチャ回数は、右上のマイページからも確認できるよ。</p>
+                                </div>
+                                <div class="button-link rare-gacha">
+                                    <a href="./result-gacha-rare.html">レアガチャを回す</a>
+                                </div>
+                                <div class="clearfix"></div>
+                                <a class="pink-no modal_close" href="javascript:void(0)">キャンセル</a>
+                            </div>
+                            <script>
+$(function(){
+    $("a[href=#about-rare]").click(function(){
+        $("#about-rare").css("top","30px")
+    });
+});
+                            </script>
                         </div>
                         <div class="row mypage-tab">
                             <div class="col-xs-4"><p class="now"><a href="./mypage.html">事前予約</a></p></div>
@@ -87,164 +124,290 @@
                             <div class="col-xs-4"><p><a href="./mypage_like.html">お気に入り</a></p></div>
                         </div>
                         <div class="row mypage-subtab">
-                            <div class="col-xs-6 sub-left">
+                            <div class="col-xs-6 mytabs sub-left now-select">
                                 <h4 class="head">配信済み</h4>
                                 <div class="tri"></div>
                             </div>
-                            <div class="col-xs-6 sub-right">
+                            <div class="col-xs-6 mytabs sub-right">
                                 <h4 class="head">未配信</h4>
                             </div>
                         </div>
-                        <div class="app-box clearfix no_reserve">
-                            <div class="app-os">
-                                <p class="android">android</p>
-                                <p class="ios">iOS</p>
-                            </div>
-                            <div class="app-img">
-                                <img src="img/app1.png" alt="アプリロゴ">
-                            </div>
-                            <div class="app-discription">
-                                <h3 class="spp-title"><a href="./single.html">さてここでモンダイです!</a></h3>
-                                <p class="company">株式会社さてここでモンダイです<img src="img/developer_like-on.png" alt="like"></p>
-                                <ul class="app-tags">
-                                    <li><a href="./search-tag.html">RPG</a></li>
-                                    <li><a href="./search-tag.html">クイズ</a></li>
-                                    <li><a href="./search-tag.html">アバター</a></li>
-                                </ul>
-                                <div class="button-link mypage-get-id to-app">
-                                    <a href="./mypresent-page.html">特典IDをGET</a>
+                        <div class="mypage-now-sales">
+                            <div class="app-box clearfix no_reserve">
+                                <div class="app-os">
+                                    <p class="android">android</p>
+                                    <p class="ios">iOS</p>
                                 </div>
-                            </div>
-                            <div class="app-icons">
-                                <img class="limited" src="img/bannericon_limited-items.png" alt="">
-                                <img class="hasGacha" src="img/bannericon_gacha.png" alt="">
-                                <img class="hasPresent" src="img/bannericon_present.png" alt="">
-                            </div>
-                            <div class="to-app-link">
-                                <a href="#">アプリへ</a>
-                            </div>
-                        </div><!-- /.app-box -->
-                        <div class="app-box clearfix no_reserve">
-                            <div class="app-os">
-                                <p class="android">android</p>
-                                <p class="ios">iOS</p>
-                            </div>
-                            <div class="app-img">
-                                <img src="img/app1.png" alt="アプリロゴ">
-                            </div>
-                            <div class="app-discription">
-                                <h3 class="spp-title"><a href="./single.html">さてここでモンダイです!</a></h3>
-                                <p class="company">株式会社さてここでモンダイです<img src="img/developer_like-on.png" alt="like"></p>
-                                <ul class="app-tags">
-                                    <li><a href="./search-tag.html">RPG</a></li>
-                                    <li><a href="./search-tag.html">クイズ</a></li>
-                                    <li><a href="./search-tag.html">アバター</a></li>
-                                </ul>
-                                <div class="button-link mypage-get-id to-app">
-                                    <a href="./mypresent-page.html">特典IDをGET</a>
+                                <div class="app-img">
+                                    <img src="img/app1.png" alt="アプリロゴ">
                                 </div>
-                            </div>
-                            <div class="app-icons">
-                                <img class="limited" src="img/bannericon_limited-items.png" alt="">
-                                <img class="hasGacha" src="img/bannericon_gacha.png" alt="">
-                                <img class="hasPresent" src="img/bannericon_present.png" alt="">
-                            </div>
-                            <div class="to-app-link">
-                                <a href="#">アプリへ</a>
-                            </div>
-                        </div><!-- /.app-box -->
-                        <div class="app-box clearfix no_reserve">
-                            <div class="app-os">
-                                <p class="android">android</p>
-                                <p class="ios">iOS</p>
-                            </div>
-                            <div class="app-img">
-                                <img src="img/app1.png" alt="アプリロゴ">
-                            </div>
-                            <div class="app-discription">
-                                <h3 class="spp-title"><a href="./single.html">さてここでモンダイです!</a></h3>
-                                <p class="company">株式会社さてここでモンダイです<img src="img/developer_like-on.png" alt="like"></p>
-                                <ul class="app-tags">
-                                    <li><a href="./search-tag.html">RPG</a></li>
-                                    <li><a href="./search-tag.html">クイズ</a></li>
-                                    <li><a href="./search-tag.html">アバター</a></li>
-                                </ul>
-                                <div class="button-link mypage-get-id to-app">
-                                    <a href="./mypresent-page.html">特典IDをGET</a>
+                                <div class="app-discription">
+                                    <h3 class="spp-title"><a href="./single.html">さてここでモンダイです!</a></h3>
+                                    <p class="company">株式会社さてここでモンダイです<img src="img/developer_like-on.png" alt="like"></p>
+                                    <ul class="app-tags">
+                                        <li><a href="./search-tag.html">RPG</a></li>
+                                        <li><a href="./search-tag.html">クイズ</a></li>
+                                        <li><a href="./search-tag.html">アバター</a></li>
+                                    </ul>
+                                    <div class="button-link mypage-get-id to-app">
+                                        <a href="./mypresent-page.html">特典IDをGET</a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="app-icons">
-                                <img class="limited" src="img/bannericon_limited-items.png" alt="">
-                                <img class="hasGacha" src="img/bannericon_gacha.png" alt="">
-                                <img class="hasPresent" src="img/bannericon_present.png" alt="">
-                            </div>
-                            <div class="to-app-link">
-                                <a href="#">アプリへ</a>
-                            </div>
-                        </div><!-- /.app-box -->
-                          
+                                <div class="app-icons">
+                                    <img class="limited" src="img/bannericon_limited-items.png" alt="">
+                                    <img class="hasGacha" src="img/bannericon_gacha.png" alt="">
+                                    <img class="hasPresent" src="img/bannericon_present.png" alt="">
+                                </div>
+                                <div class="to-app-link">
+                                    <a href="#">アプリへ</a>
+                                </div>
+                            </div><!-- /.app-box -->
+                            <div class="app-box clearfix no_reserve">
+                                <div class="app-os">
+                                    <p class="android">android</p>
+                                    <p class="ios">iOS</p>
+                                </div>
+                                <div class="app-img">
+                                    <img src="img/app1.png" alt="アプリロゴ">
+                                </div>
+                                <div class="app-discription">
+                                    <h3 class="spp-title"><a href="./single.html">さてここでモンダイです!</a></h3>
+                                    <p class="company">株式会社さてここでモンダイです<img src="img/developer_like-on.png" alt="like"></p>
+                                    <ul class="app-tags">
+                                        <li><a href="./search-tag.html">RPG</a></li>
+                                        <li><a href="./search-tag.html">クイズ</a></li>
+                                        <li><a href="./search-tag.html">アバター</a></li>
+                                    </ul>
+                                    <div class="button-link mypage-get-id to-app">
+                                        <a href="./mypresent-page.html">特典IDをGET</a>
+                                    </div>
+                                </div>
+                                <div class="app-icons">
+                                    <img class="limited" src="img/bannericon_limited-items.png" alt="">
+                                    <img class="hasGacha" src="img/bannericon_gacha.png" alt="">
+                                    <img class="hasPresent" src="img/bannericon_present.png" alt="">
+                                </div>
+                                <div class="to-app-link">
+                                    <a href="#">アプリへ</a>
+                                </div>
+                            </div><!-- /.app-box -->
+                            <div class="app-box clearfix no_reserve">
+                                <div class="app-os">
+                                    <p class="android">android</p>
+                                    <p class="ios">iOS</p>
+                                </div>
+                                <div class="app-img">
+                                    <img src="img/app1.png" alt="アプリロゴ">
+                                </div>
+                                <div class="app-discription">
+                                    <h3 class="spp-title"><a href="./single.html">さてここでモンダイです!</a></h3>
+                                    <p class="company">株式会社さてここでモンダイです<img src="img/developer_like-on.png" alt="like"></p>
+                                    <ul class="app-tags">
+                                        <li><a href="./search-tag.html">RPG</a></li>
+                                        <li><a href="./search-tag.html">クイズ</a></li>
+                                        <li><a href="./search-tag.html">アバター</a></li>
+                                    </ul>
+                                    <div class="button-link mypage-get-id to-app">
+                                        <a href="./mypresent-page.html">特典IDをGET</a>
+                                    </div>
+                                </div>
+                                <div class="app-icons">
+                                    <img class="limited" src="img/bannericon_limited-items.png" alt="">
+                                    <img class="hasGacha" src="img/bannericon_gacha.png" alt="">
+                                    <img class="hasPresent" src="img/bannericon_present.png" alt="">
+                                </div>
+                                <div class="to-app-link">
+                                    <a href="#">アプリへ</a>
+                                </div>
+                            </div><!-- /.app-box -->
+                        </div><!-- /.mypage-now-sales -->
+                        <div class="mypage-no-sales">
+                            <div class="app-box clearfix no_reserve">
+                                <div class="app-os">
+                                    <p class="android">android</p>
+                                    <p class="ios">iOS</p>
+                                </div>
+                                <div class="app-img">
+                                    <img src="img/app1.png" alt="アプリロゴ">
+                                </div>
+                                <div class="app-discription">
+                                    <h3 class="spp-title"><a href="./single.html">さてここでモンダイです!</a></h3>
+                                    <p class="company">株式会社さてここでモンダイです<img src="img/developer_like-on.png" alt="like"></p>
+                                    <ul class="app-tags">
+                                        <li><a href="./search-tag.html">RPG</a></li>
+                                        <li><a href="./search-tag.html">クイズ</a></li>
+                                        <li><a href="./search-tag.html">アバター</a></li>
+                                    </ul>
+                                    <div class="button-link mypage-get-id to-app">
+                                        <a href="./mypresent-page.html">特典IDをGET</a>
+                                    </div>
+                                </div>
+                                <div class="app-icons">
+                                    <img class="limited" src="img/bannericon_limited-items.png" alt="">
+                                    <img class="hasGacha" src="img/bannericon_gacha.png" alt="">
+                                    <img class="hasPresent" src="img/bannericon_present.png" alt="">
+                                </div>
+                                <div class="to-app-link">
+                                    <a href="#">アプリへ</a>
+                                </div>
+                            </div><!-- /.app-box -->
+                            <div class="app-box clearfix no_reserve">
+                                <div class="app-os">
+                                    <p class="android">android</p>
+                                    <p class="ios">iOS</p>
+                                </div>
+                                <div class="app-img">
+                                    <img src="img/app1.png" alt="アプリロゴ">
+                                </div>
+                                <div class="app-discription">
+                                    <h3 class="spp-title"><a href="./single.html">さてここでモンダイです!</a></h3>
+                                    <p class="company">株式会社さてここでモンダイです<img src="img/developer_like-on.png" alt="like"></p>
+                                    <ul class="app-tags">
+                                        <li><a href="./search-tag.html">RPG</a></li>
+                                        <li><a href="./search-tag.html">クイズ</a></li>
+                                        <li><a href="./search-tag.html">アバター</a></li>
+                                    </ul>
+                                    <div class="button-link mypage-get-id to-app">
+                                        <a href="./mypresent-page.html">特典IDをGET</a>
+                                    </div>
+                                </div>
+                                <div class="app-icons">
+                                    <img class="limited" src="img/bannericon_limited-items.png" alt="">
+                                    <img class="hasGacha" src="img/bannericon_gacha.png" alt="">
+                                    <img class="hasPresent" src="img/bannericon_present.png" alt="">
+                                </div>
+                                <div class="to-app-link">
+                                    <a href="#">アプリへ</a>
+                                </div>
+                            </div><!-- /.app-box -->
+                            <div class="app-box clearfix no_reserve">
+                                <div class="app-os">
+                                    <p class="android">android</p>
+                                    <p class="ios">iOS</p>
+                                </div>
+                                <div class="app-img">
+                                    <img src="img/app1.png" alt="アプリロゴ">
+                                </div>
+                                <div class="app-discription">
+                                    <h3 class="spp-title"><a href="./single.html">さてここでモンダイです!</a></h3>
+                                    <p class="company">株式会社さてここでモンダイです<img src="img/developer_like-on.png" alt="like"></p>
+                                    <ul class="app-tags">
+                                        <li><a href="./search-tag.html">RPG</a></li>
+                                        <li><a href="./search-tag.html">クイズ</a></li>
+                                        <li><a href="./search-tag.html">アバター</a></li>
+                                    </ul>
+                                    <div class="button-link mypage-get-id to-app">
+                                        <a href="./mypresent-page.html">特典IDをGET</a>
+                                    </div>
+                                </div>
+                                <div class="app-icons">
+                                    <img class="limited" src="img/bannericon_limited-items.png" alt="">
+                                    <img class="hasGacha" src="img/bannericon_gacha.png" alt="">
+                                    <img class="hasPresent" src="img/bannericon_present.png" alt="">
+                                </div>
+                                <div class="to-app-link">
+                                    <a href="#">アプリへ</a>
+                                </div>
+                            </div><!-- /.app-box -->
+                        </div><!-- /.mypage-no-sales -->
                     </div><!-- /.col-xs-9 -->
                     <div class="col-xs-3 single-side">
                         <div class="news">
                             <p>このアプリのニュース</p>
                             <div class="news-box">
-                                <p class="title"><a href="#">SNSクイズ更新！わっしょいわっ・・・</a></p>
+                                <p class="title"><a href="./news_single.html">SNSクイズ更新！わっしょいわっ・・・</a></p>
                                 <p class="date">2015/09/11 00:00:00</p>
                             </div>
                             <div class="news-box">
-                                <p class="title"><a href="#">SNSクイズ更新！わっしょいわっ・・・</a></p>
+                                <p class="title"><a href="./news_single.html">SNSクイズ更新！わっしょいわっ・・・</a></p>
                                 <p class="date">2015/09/11 00:00:00</p>
                             </div>
                             <div class="news-box">
-                                <p class="title"><a href="#">SNSクイズ更新！わっしょいわっ・・・</a></p>
+                                <p class="title"><a href="./news_single.html">SNSクイズ更新！わっしょいわっ・・・</a></p>
                                 <p class="date">2015/09/11 00:00:00</p>
                             </div>
-                            <p class="more-news"><a href="#"><span class="caret"></span>もっと展開</a></p>
+                            <div class="open-news" style="display:none;">
+                                <div class="news-box">
+                                    <p class="title"><a href="./news_single.html">SNSクイズ更新！わっしょいわっ・・・</a></p>
+                                    <p class="date">2015/09/11 00:00:00</p>
+                                </div>
+                                <div class="news-box">
+                                    <p class="title"><a href="./news_single.html">SNSクイズ更新！わっしょいわっ・・・</a></p>
+                                    <p class="date">2015/09/11 00:00:00</p>
+                                </div>
+                                <div class="news-box">
+                                    <p class="title"><a href="./news_single.html">SNSクイズ更新！わっしょいわっ・・・</a></p>
+                                    <p class="date">2015/09/11 00:00:00</p>
+                                </div>
+                            </div>
+                            <p class="more-news"><a href="javascript:void(0)"><span class="caret"></span>もっと展開</a></p>
                         </div>
                         <div class="search-company-page">
                             <div class="side-osusume">
                                 <h5>お気に入り会社のアプリ</h5>
                                 <div class="app-img-box">
-                                    <p class="app-title">クリスタルクラウン</p>
-                                    <img src="img/appbar.png" alt="アプリバー">
+                                    <a class="app-title" href="./single.html">
+                                        クリスタルクラウン
+                                        <img src="img/appbar.png" alt="アプリバー">
+                                    </a>
                                 </div>
                                 <div class="app-img-box">
-                                    <p class="app-title">ねむりの木にすむウィックル</p>
-                                    <img src="img/appbar2.png" alt="アプリバー">
+                                    <a class="app-title" href="./single.html">
+                                        ねむりの木にすむウィックル
+                                        <img src="img/appbar2.png" alt="アプリバー">
+                                    </a>
+                                    <div class="reserve-num-img">
+                                        <p>現在の予約数：18,882</p>
+                                    </div>
                                 </div>
                                 <div class="app-img-box">
-                                    <p class="app-title">プリンセスメーカー</p>
-                                    <img src="img/appbar3.png" alt="アプリバー">
+                                    <a class="app-title" href="./single.html">
+                                        プリンセスメーカー
+                                        <img src="img/appbar3.png" alt="アプリバー">
+                                    </a>
                                 </div>
                                 <div class="app-img-box">
-                                    <p class="app-title">メイプルストーリー</p>
-                                    <img src="img/appbar4.png" alt="アプリバー">
+                                    <a class="app-title" href="./single.html">
+                                        メイプルストーリー
+                                        <img src="img/appbar4.png" alt="アプリバー">
+                                    </a>
                                 </div>
                                 <div class="app-img-box store-link">
                                     <p class="app-title">ストアで絶賛配信中！</p>
-                                    <a href="#">プリンセスメーカー</a>
-                                    <a href="#">メイプルストーリー</a>
-                                    <a href="#">さてここでモンダイです</a>
+                                    <a href="./single.html">プリンセスメーカー</a>
+                                    <a href="./single.html">メイプルストーリー</a>
+                                    <a href="./single.html">さてここでモンダイです</a>
                                 </div>
                             </div>
                         </div>
                         <div class="side-osusume">
                             <h5>オススメアプリ<span class="update">Update 2015.09.11</span></h5>
                             <div class="app-img-box">
-                                <p class="app-title">クリスタルクラウン</p>
-                                <img src="img/appbar.png" alt="アプリバー">
+                                <a class="app-title" href="./single.html">
+                                    クリスタルクラウン
+                                    <img src="img/appbar.png" alt="アプリバー">
+                                </a>
                             </div>
                             <div class="app-img-box">
-                                <p class="app-title">ねむりの木にすむウィックル</p>
-                                <img src="img/appbar2.png" alt="アプリバー">
+                                <a class="app-title" href="./single.html">
+                                    ねむりの木にすむウィックル
+                                    <img src="img/appbar2.png" alt="アプリバー">
+                                </a>
+                                <div class="reserve-num-img">
+                                    <p>現在の予約数：18,882</p>
+                                </div>
                             </div>
                             <div class="app-img-box">
-                                <p class="app-title">プリンセスメーカー</p>
-                                <img src="img/appbar3.png" alt="アプリバー">
+                                <a class="app-title" href="./single.html">
+                                    プリンセスメーカー
+                                    <img src="img/appbar3.png" alt="アプリバー">
+                                </a>
                             </div>
                             <div class="app-img-box">
-                                <p class="app-title">メイプルストーリー</p>
-                                <img src="img/appbar4.png" alt="アプリバー">
+                                <a class="app-title" href="./single.html">
+                                    メイプルストーリー
+                                    <img src="img/appbar4.png" alt="アプリバー">
+                                </a>
                             </div>
                         </div>
                     </div>

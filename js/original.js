@@ -62,6 +62,27 @@ $(function(){
         $(".haisin-result").hide();
     });
 });
+/*マイページの三角形のタブ*/
+$(function(){
+    $(".sub-left,.sub-right").click(function(){
+        $(".mytabs.now-select").each(function(){
+            $(this).removeClass("now-select");
+            $(this).children(".tri").remove();
+        });
+    });
+    $(".sub-left").click(function(){
+        $(this).addClass("now-select");
+        $(this).append('<div class="tri"><'+'/'+'div>');
+        $(".mypage-now-sales").show();
+        $(".mypage-no-sales").hide();
+    });
+    $(".sub-right").click(function(){
+        $(this).addClass("now-select");
+        $(this).append('<div class="tri"><'+'/'+'div>');
+        $(".mypage-now-sales").hide();
+        $(".mypage-no-sales").show();
+    });
+});
 $(function(){
     var flg = {a:'close',k:'close',s:'close',t:'close',n:'close',h:'close',m:'close',y:'close',r:'close',w:'close',other:'close' };
     
@@ -106,4 +127,19 @@ $(window).load(function() {
   $('.flexslider').flexslider({
     animation: "slide"
   });
+});
+/*マイページサイドバーのニュースの展開*/
+$(function(){
+    newsFlag="close"
+    $(".more-news").click(function(){
+        $(".open-news").toggle();
+        if(newsFlag == "close"){
+            newsFlag="open";
+            $(this).html('<a href="javascript:void(0)"><span class="caret tops"></span>閉じる</a>');
+        }
+        else{
+            newsFlag="close";
+            $(this).html('<a href="javascript:void(0)"><span class="caret"></span>もっと展開</a>');
+        }
+    });
 });

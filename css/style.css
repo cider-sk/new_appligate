@@ -563,7 +563,7 @@ p.news-content{
     margin-left: auto;
     margin-right: auto;
 }
-.app-detail .button-link a,.reserve-page .button-link a{
+.app-detail .button-link a,.reserve-page .button-link a,.fix-btn .button-link a{
     display: block;
     font-weight: bold;
     text-align: center;
@@ -770,6 +770,13 @@ p.news-content{
     margin-right:2px;
     border-top: 10px dashed;
     border-top: 10px solid;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+}
+.single-side .news p.more-news .tops{
+    border-top:none;
+    border-bottom: 10px dashed;
+    border-bottom: 10px solid;
     border-right: 6px solid transparent;
     border-left: 6px solid transparent;
 }
@@ -1003,6 +1010,7 @@ p.news-content{
 }
 /*ボタンリンクテンプレ*/
 .button-link{
+    margin:auto;
     margin-left: auto;
     margin-right: auto;
     padding-bottom:3px;
@@ -1597,7 +1605,6 @@ a.more-company{
     font-weight:bold;
 }
 .create-box a{
-    display:block;
     margin:10px 0;
 }
 .create-box p,.login-box p{
@@ -1865,15 +1872,11 @@ img.hasGacha,img.hasPresent{
     color:#fff;
     margin-right:30px;
 }
-.tweet-for-gacha .tweet-box{
-    border:1px solid #333;
-    padding:5px;
-}
 #about-rare .button-link{
     width:50%;
+    margin:auto;
 }
-#about-rare a{
-    margin-top:10px;
+#about-rare a:hover{
 }
 #about-rare .button-link a{
     float:none;
@@ -1884,6 +1887,7 @@ img.hasGacha,img.hasPresent{
 #about-rare h3{
     margin-top:0;
     text-align:center;
+    font-weight:bold;
 }
 #about-rare p{
     margin:0;
@@ -2049,4 +2053,25 @@ p.notice-num{
 }
 .search-tag-page .search-form,.search-company-page .search-form{
     margin-top:0;
+}
+.result-page-bottom{
+    padding-right:0;
+}
+.result-page-bottom .button-link{
+    width:100%;
+}
+.result-page-bottom .left0{
+    padding-left:0;
+}
+.download-file p{
+    text-align:right;
+    color:#b70000;
+    font-weight:bold;
+}
+.download-file a{
+    color:#b70000;
+    font-weight:bold;
+    margin-left:20px;
+    padding:4px 35px;
+    border:2px solid #b70000;
 }
