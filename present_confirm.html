@@ -65,7 +65,7 @@
             <div class="row main-content present-confirm">
                 <div class="col-xs-9 reserve-page">
                     <div class="single-page confirm-page">
-                        <h4 class="head">ノーマルガチャ結果</h4>
+                        <h4 class="head">確定中のガチャ特典</h4>
                         <div class="tri"></div>
                         <div class="result-box">
                             <p class="star4 result"><span class="glyphicon glyphicon-star-empty"></span>４</p>
@@ -73,7 +73,19 @@
                         </div>
                     </div>
                     <div class="button-link normal-gacha reset-button">
-                        <a href="#">リセット</a>
+                        <a rel="leanModal" href="#reset-comment">リセット</a>
+                    </div>
+                    <div id="reset-comment" class="modal-comment">
+                        <h4>確定中の特典をリセットしますか？</h4>
+                        <p>一度リセットすると、元に戻すことはできません。</p>
+                        <a class="red-yes" rel="leanModal" href="#reset-ok">リセット</a>
+                        <a class="red-no modal_close" href="javascript:void(0)">キャンセル</a>
+                    </div>
+                    <div id="reset-ok" class="modal-comment reserve-for-gacha">
+                        <h4>特典をリセットしました</h4>
+                        <p>更に良い特典をゲットしよう！</p>
+                        <a class="pink-yes" href="./gacha-page.html">ガチャへ</a>
+                        <a class="pink-no" href="#">アプリ詳細</a>
                     </div>
                     <div class="move-page">
                         <a href="./index.html">ランキングに戻る</a>
@@ -91,20 +103,31 @@
                     <div class="side-osusume to-you">
                         <h5>あなたにオススメのアプリ</h5>
                         <div class="app-img-box">
-                            <p class="app-title">クリスタルクラウン</p>
-                            <img src="img/appbar.png" alt="アプリバー">
+                            <a class="app-title" href="./single.html">
+                                クリスタルクラウン
+                                <img src="img/appbar.png" alt="アプリバー">
+                            </a>
                         </div>
                         <div class="app-img-box">
-                            <p class="app-title">ねむりの木にすむウィックル</p>
-                            <img src="img/appbar2.png" alt="アプリバー">
+                            <a class="app-title" href="./single.html">
+                                ねむりの木にすむウィックル
+                                <img src="img/appbar2.png" alt="アプリバー">
+                            </a>
+                            <div class="reserve-num-img">
+                                <p>現在の予約数：18,882</p>
+                            </div>
                         </div>
                         <div class="app-img-box">
-                            <p class="app-title">プリンセスメーカー</p>
-                            <img src="img/appbar3.png" alt="アプリバー">
+                            <a class="app-title" href="./single.html">
+                                プリンセスメーカー
+                                <img src="img/appbar3.png" alt="アプリバー">
+                            </a>
                         </div>
                         <div class="app-img-box">
-                            <p class="app-title">メイプルストーリー</p>
-                            <img src="img/appbar4.png" alt="アプリバー">
+                            <a class="app-title" href="./single.html">
+                                メイプルストーリー
+                                <img src="img/appbar4.png" alt="アプリバー">
+                            </a>
                         </div>
                     </div>
                 </div>
